@@ -1,3 +1,5 @@
+
+
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug,Clone)]
@@ -16,7 +18,7 @@ pub struct Movie {
 #[derive(Serialize, Deserialize, Debug,Clone)]
 pub struct TmbdResponse{
     pub page: i32,
-    pub result:vec<Movie>,
+    pub results:Vec<Movie>,
     pub total_pages: i32,
 }
 
